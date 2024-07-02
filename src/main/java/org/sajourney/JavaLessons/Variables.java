@@ -10,7 +10,7 @@ public class Variables {
         short shortInt= 20;
         char character = 'A';
         float floatingPointValues = 345.6789f;
-        double bigFloatingPointValues = 345.789790;
+        double bigFloatingPointValues = 345.78979;
 
         //reference
         String name = "Willis Otondi";
