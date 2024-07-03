@@ -5,8 +5,13 @@ public class Car {
     private String model;
     private int year;
 
-    Car(){
-
+    Car(String make, String model, int year){
+        this.setMake(make);
+        this.setModel(model);
+        this.setYear(year);
+    }
+    Car(Car x){
+        this.copy(x);
     }
     public String getMake(){
         return make;
@@ -28,5 +33,11 @@ public class Car {
     public int setYear(int year){
         this.year = year;
         return year;
+    }
+    public void copy(Car x){
+        this.setMake(x.getMake());
+        this.setModel(x.getModel());
+        this.setYear(x.getYear());
+
     }
 }
