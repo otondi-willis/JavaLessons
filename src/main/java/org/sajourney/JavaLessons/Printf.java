@@ -20,5 +20,11 @@ public class Printf {
         System.out.printf("%d", myInt);
         System.out.printf("%f", myDouble);
         System.out.printf("This is a format string %d", 123);
+
+        //width
+        System.out.printf("\n Hello %10s", myString);
+
+        //precision
+        System.out.printf("You have this much money %.2f",myDouble);
     }
 }
