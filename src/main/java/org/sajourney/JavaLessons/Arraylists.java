@@ -48,7 +48,7 @@ public class Arraylists {
 
         System.out.println(groceryList.get(0).get(1));
 
-        //Foreach functionality
+        //Foreach/ enhanced for loop functionality
 
         for(String i : produceList){
             System.out.println(i);
