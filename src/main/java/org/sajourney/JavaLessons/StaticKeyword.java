@@ -7,6 +7,7 @@ public class StaticKeyword {
         Friend friend3 = new Friend("Woolly");
 
         System.out.println(Friend.numberOfFriends);
+        Friend.displayFriends();
 
     }
 }
