@@ -14,6 +14,9 @@ public class MyLabel {
         label.setVerticalTextPosition(JLabel.BOTTOM);// top, center or bottom
         label.setForeground(new Color(0xffb50808));
         label.setFont(new Font("MV Boli", Font.PLAIN,20));
+        label.setIconTextGap(20);
+        label.setBackground(Color.black);
+        label.setOpaque(true);
 
 
 
