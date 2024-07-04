@@ -13,7 +13,26 @@ public class AudioClass {
         Clip clip = AudioSystem.getClip();
         clip.open(audioStream);
 
+
+        String response = "";
+
+
+        while(!response.equals("Q")){
+            System.out.println("P = play, S = stop, R = Reset, Q = Quit");
+            System.out.println("Enter your choice: ");
+            response = scan.next();
+            response = response.toUpperCase();
+
+            switch(response){
+                case "P" : clip.start();
+                break;
+                default:
+                    System.out.println("Not a valid response");
+            }
+
+
+        }
+
         clip.start();
-        String response = scan.next();
     }
 }
