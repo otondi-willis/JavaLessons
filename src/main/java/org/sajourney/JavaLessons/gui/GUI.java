@@ -15,7 +15,8 @@ public class GUI {
 
         ImageIcon image = new ImageIcon("C:\\Users\\ADMIN\\Desktop\\teleafia pics\\logo.PNG");//create an image icon
         frame.setIconImage(image.getImage());//change icon of frame
-        frame.getContentPane().setBackground(Color.blue);// Change background color
+        //frame.getContentPane().setBackground(Color.blue);// Change background color
+        frame.getContentPane().setBackground(new Color(0xfcf4f4));
 
     }
 }
