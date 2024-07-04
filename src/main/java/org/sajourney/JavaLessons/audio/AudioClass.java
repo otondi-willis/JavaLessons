@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class AudioClass {
     public static void main(String[] args) throws UnsupportedAudioFileException, IOException, LineUnavailableException {
         Scanner scan = new Scanner(System.in);
-        File file = new File("MoonlightSonata.wav");
+        File file = new File("Not Like Us (320).wav");
         AudioInputStream audioStream = AudioSystem.getAudioInputStream(file);
         Clip clip = AudioSystem.getClip();
         clip.open(audioStream);
