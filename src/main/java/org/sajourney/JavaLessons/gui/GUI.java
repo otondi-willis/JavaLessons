@@ -11,5 +11,9 @@ public class GUI {
         frame.setResizable(false);
         frame.setSize(420,420);// sets the x-dimension and y- dimension
         frame.setVisible(true);// makes frame visible
+
+        ImageIcon image = new ImageIcon("C:\\Users\\ADMIN\\Desktop\\teleafia pics\\logo.PNG");//create an image icon
+        frame.setIconImage(image.getImage());//change icon of frame
+
     }
 }
