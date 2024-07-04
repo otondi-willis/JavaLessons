@@ -24,8 +24,11 @@ public class AudioClass {
             response = response.toUpperCase();
 
             switch(response){
-                case "P" : clip.start();
+                case ("P") : clip.start();
                 break;
+                case ("S") : clip.stop();
+                break;
+
                 default:
                     System.out.println("Not a valid response");
             }
