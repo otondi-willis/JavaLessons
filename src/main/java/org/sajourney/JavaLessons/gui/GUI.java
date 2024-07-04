@@ -18,7 +18,10 @@ public class GUI {
         //frame.getContentPane().setBackground(Color.blue);// Change background color
         frame.getContentPane().setBackground(new Color(0xfcf4f4));*/
 
-        MyFrame myFrame = new MyFrame();
+        //MyFrame myFrame = new MyFrame();
+        MyLabel myLabel = new MyLabel();
+
+
 
     }
 }
