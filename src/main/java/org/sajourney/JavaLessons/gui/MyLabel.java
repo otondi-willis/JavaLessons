@@ -1,6 +1,7 @@
 package org.sajourney.JavaLessons.gui;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class MyLabel {
 
@@ -11,6 +12,7 @@ public class MyLabel {
         label.setIcon(image);//change icon of frame
         label.setHorizontalTextPosition(JLabel.CENTER);// left, center, right of image icon
         label.setVerticalTextPosition(JLabel.BOTTOM);// top, center or bottom
+        label.setForeground(new Color(0xffb50808));
 
 
 
