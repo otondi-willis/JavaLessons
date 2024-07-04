@@ -20,6 +20,8 @@ public class MyLabel {
         label.setBackground(Color.black);
         label.setOpaque(true);
         label.setBorder(border);
+        label.setVerticalAlignment(JLabel.TOP);
+        label.setHorizontalAlignment(JLabel.CENTER);
 
 
 
