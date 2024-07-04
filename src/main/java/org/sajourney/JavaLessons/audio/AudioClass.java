@@ -30,6 +30,8 @@ public class AudioClass {
                 break;
                 case ("R") : clip.setMicrosecondPosition(0);
                 break;
+                case ("Q") : clip.close();
+                break;
 
                 default:
                     System.out.println("Not a valid response");
@@ -37,6 +39,7 @@ public class AudioClass {
 
 
         }
+        System.out.println("Byeeeee!");
 
         clip.start();
     }
