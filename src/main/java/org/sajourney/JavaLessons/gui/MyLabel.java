@@ -7,6 +7,9 @@ public class MyLabel {
     public static void main(String[] args){
         JLabel label = new JLabel();//create a label
         label.setText("Bro, do you even code");//set text of label
+        ImageIcon image = new ImageIcon("C:\\Users\\ADMIN\\Desktop\\teleafia pics\\logo.PNG");//create an image icon
+        label.setIcon(image);//change icon of frame
+
 
         JFrame frame = new JFrame();
 
