@@ -28,6 +28,8 @@ public class AudioClass {
                 break;
                 case ("S") : clip.stop();
                 break;
+                case ("R") : clip.setMicrosecondPosition(0);
+                break;
 
                 default:
                     System.out.println("Not a valid response");
