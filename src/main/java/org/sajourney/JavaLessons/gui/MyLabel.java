@@ -9,6 +9,7 @@ public class MyLabel {
         label.setText("Bro, do you even code");//set text of label
         ImageIcon image = new ImageIcon("C:\\Users\\ADMIN\\Desktop\\teleafia pics\\logo.PNG");//create an image icon
         label.setIcon(image);//change icon of frame
+        label.setHorizontalTextPosition(JLabel.CENTER);
 
 
         JFrame frame = new JFrame();
