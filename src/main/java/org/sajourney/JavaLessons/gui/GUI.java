@@ -1,6 +1,7 @@
 package org.sajourney.JavaLessons.gui;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class GUI {
     public static void main (String[] args){
@@ -14,6 +15,7 @@ public class GUI {
 
         ImageIcon image = new ImageIcon("C:\\Users\\ADMIN\\Desktop\\teleafia pics\\logo.PNG");//create an image icon
         frame.setIconImage(image.getImage());//change icon of frame
+        frame.getContentPane().setBackground(Color.blue);// Change background color
 
     }
 }
