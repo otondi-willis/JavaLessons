@@ -22,6 +22,8 @@ public class MyLabel {
         label.setBorder(border);
         label.setVerticalAlignment(JLabel.TOP);
         label.setHorizontalAlignment(JLabel.CENTER);
+        label.setBounds(0,0,250,250); // set x, y within the frames as well as dimensions
+
 
 
 
@@ -31,6 +33,7 @@ public class MyLabel {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);
         frame.setSize(420,420);// sets the x-dimension and y- dimension
+        frame.setLayout(null);
         frame.setVisible(true);// makes frame visible
         frame.add(label);
     }
