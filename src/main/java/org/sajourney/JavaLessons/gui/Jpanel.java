@@ -6,6 +6,13 @@ import java.awt.*;
 public class Jpanel {
     //JPanel = A GUI component that functions as a container to hold other components
     public static void main(String[] args){
+
+        ImageIcon icon = new ImageIcon("C:\\Users\\ADMIN\\Pictures\\Snip1.PNG");
+
+        JLabel label = new JLabel();
+        label.setText("HI");
+        label.setIcon(icon);
+
         JPanel redPanel = new JPanel();
         redPanel.setBackground(Color.red);
         redPanel.setBounds(0,0,250,250);
@@ -24,6 +31,7 @@ public class Jpanel {
         frame.setLayout(null);
         frame.setSize(750, 750);
         frame.setVisible(true);
+        redPanel.add(label);
         frame.add(redPanel);
         frame.add(bluePanel);
         frame.add(greenPanel);
