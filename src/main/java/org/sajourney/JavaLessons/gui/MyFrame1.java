@@ -24,6 +24,7 @@ public class MyFrame1 extends JFrame{
         button.setIconTextGap(-5);
         button.setForeground(Color.blue);
         button.setBackground(Color.LIGHT_GRAY);
+        button.setBorder(BorderFactory.createEtchedBorder());
 
 
 
