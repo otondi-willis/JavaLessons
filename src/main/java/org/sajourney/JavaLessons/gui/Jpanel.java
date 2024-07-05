@@ -12,6 +12,7 @@ public class Jpanel {
         JLabel label = new JLabel();
         label.setText("HI");
         label.setIcon(icon);
+        label.setVerticalAlignment(JLabel.TOP);
 
         JPanel redPanel = new JPanel();
         redPanel.setBackground(Color.red);
@@ -24,6 +25,7 @@ public class Jpanel {
         JPanel greenPanel = new JPanel();
         greenPanel.setBackground(Color.green);
         greenPanel.setBounds(0,250,500,250);
+        greenPanel.setLayout(new BorderLayout());
 
 
         JFrame frame = new JFrame();
@@ -31,7 +33,7 @@ public class Jpanel {
         frame.setLayout(null);
         frame.setSize(750, 750);
         frame.setVisible(true);
-        redPanel.add(label);
+        greenPanel.add(label);
         frame.add(redPanel);
         frame.add(bluePanel);
         frame.add(greenPanel);
