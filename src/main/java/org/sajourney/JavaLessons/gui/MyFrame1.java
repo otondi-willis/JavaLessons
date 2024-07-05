@@ -4,12 +4,13 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class MyFrame1 extends JFrame implements ActionListener {
+//public class MyFrame1 extends JFrame implements ActionListener {
+public class MyFrame1 extends JFrame{
     JButton button;
     MyFrame1(){
         button = new JButton();
         button.setBounds(200,100,100,50);
-        button.addActionListener(this);
+        button.addActionListener(e -> System.out.println("poo"));
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(null);
@@ -18,11 +19,11 @@ public class MyFrame1 extends JFrame implements ActionListener {
         this.add(button);
     }
 
-    @Override
-    public void actionPerformed(ActionEvent e){
-        if(e.getSource()==button){
-            System.out.println("poo");
-
-        }
-    }
+//    @Override
+//    public void actionPerformed(ActionEvent e){
+//        if(e.getSource()==button){
+//            System.out.println("poo");
+//
+//        }
+//    }
 }
