@@ -8,13 +8,18 @@ import java.awt.event.ActionListener;
 //public class MyFrame1 extends JFrame implements ActionListener {
 public class MyFrame1 extends JFrame{
     JButton button;
+    JLabel label;
     MyFrame1(){
         ImageIcon icon = new ImageIcon("C:\\Users\\ADMIN\\Desktop\\New folder\\dice3.PNG");
-
+        ImageIcon icon1 = new ImageIcon("C:\\Users\\ADMIN\\Desktop\\222.PNG");
+        label = new JLabel();
+        label.setBounds(150,250,150,150);
+        label.setVisible(false);
+        label.setIcon(icon1);
 
         button = new JButton();
         button.setBounds(100,100,250,200);
-        button.addActionListener(e -> System.out.println("poo"));
+        button.addActionListener(e -> label.setVisible(true));
         button.setText("Im a button");
         button.setFocusable(false);
         button.setIcon(icon);
@@ -25,7 +30,7 @@ public class MyFrame1 extends JFrame{
         button.setForeground(Color.blue);
         button.setBackground(Color.LIGHT_GRAY);
         button.setBorder(BorderFactory.createEtchedBorder());
-        button.setEnabled(false);
+        button.setEnabled(true);
 
 
 
@@ -36,6 +41,7 @@ public class MyFrame1 extends JFrame{
         this.setSize(500,500);
         this.setVisible(true);
         this.add(button);
+        this.add(label);
     }
 
 //    @Override
