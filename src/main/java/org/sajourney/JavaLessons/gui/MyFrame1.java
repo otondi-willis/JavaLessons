@@ -8,11 +8,15 @@ import java.awt.event.ActionListener;
 public class MyFrame1 extends JFrame{
     JButton button;
     MyFrame1(){
+        ImageIcon icon = new ImageIcon("C:\\Users\\ADMIN\\Desktop\\New folder\\dice3.PNG");
+
+
         button = new JButton();
-        button.setBounds(200,100,100,50);
+        button.setBounds(100,100,250,100);
         button.addActionListener(e -> System.out.println("poo"));
         button.setText("Im a button");
         button.setFocusable(false);
+        button.setIcon(icon);
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(null);
