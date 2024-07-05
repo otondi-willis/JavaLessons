@@ -23,6 +23,12 @@ public class MyFrame1 extends JFrame{
         button.setFont(new Font("Comic Sans",Font.BOLD,25));
         button.setIconTextGap(-5);
         button.setForeground(Color.blue);
+        button.setBackground(Color.LIGHT_GRAY);
+
+
+
+
+
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(null);
         this.setSize(500,500);
