@@ -11,6 +11,8 @@ public class MyFrame1 extends JFrame{
         button = new JButton();
         button.setBounds(200,100,100,50);
         button.addActionListener(e -> System.out.println("poo"));
+        button.setText("Im a button");
+        button.setFocusable(false);
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(null);
