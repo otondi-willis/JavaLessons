@@ -13,6 +13,8 @@ public class Jpanel {
         label.setText("HI");
         label.setIcon(icon);
         label.setVerticalAlignment(JLabel.TOP);
+        label.setBounds(100,100,75, 75);
+
 
         JPanel redPanel = new JPanel();
         redPanel.setBackground(Color.red);
