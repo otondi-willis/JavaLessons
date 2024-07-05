@@ -14,6 +14,11 @@ public class Jpanel {
         bluePanel.setBackground(Color.blue);
         bluePanel.setBounds(250,0,250,250);
 
+        JPanel greenPanel = new JPanel();
+        greenPanel.setBackground(Color.green);
+        greenPanel.setBounds(0,250,500,250);
+
+
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(null);
@@ -21,6 +26,7 @@ public class Jpanel {
         frame.setVisible(true);
         frame.add(redPanel);
         frame.add(bluePanel);
+        frame.add(greenPanel);
     }
 
 
