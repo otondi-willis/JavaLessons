@@ -29,6 +29,10 @@ public class LayredPane {
         JLayeredPane layeredPane = new JLayeredPane();
         layeredPane.setBounds(0,0,500,500);
 
+        layeredPane.add(label1,JLayeredPane.DEFAULT_LAYER);
+        layeredPane.add(label2, JLayeredPane.DEFAULT_LAYER);
+        layeredPane.add(label3, JLayeredPane.DRAG_LAYER);
+
         JFrame frame = new JFrame("JLayeredPane");
         frame.add(layeredPane);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
