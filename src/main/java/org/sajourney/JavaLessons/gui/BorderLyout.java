@@ -55,6 +55,12 @@ public class BorderLyout {
         panel9.setPreferredSize(new Dimension(50,50));
         panel10.setPreferredSize(new Dimension(50,50));
 
+        panel1.add(panel6, BorderLayout.NORTH);
+        panel2.add(panel7, BorderLayout.SOUTH);
+        panel3.add(panel8, BorderLayout.CENTER);
+        panel4.add(panel9, BorderLayout.EAST);
+        panel5.add(panel10, BorderLayout.WEST);
+
 
         // ------sub panels
 
