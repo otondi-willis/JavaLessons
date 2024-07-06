@@ -15,7 +15,7 @@ public class BorderLyout {
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(500,500);
-        frame.setLayout(new BorderLayout());
+        frame.setLayout(new BorderLayout(10,10));
         frame.setVisible(true);
 
         JPanel panel1 = new JPanel();
@@ -36,8 +36,33 @@ public class BorderLyout {
         panel4.setPreferredSize(new Dimension(100, 100));
         panel5.setPreferredSize(new Dimension(100,100));
 
+        //-------sub panels added
+        JPanel panel6 = new JPanel();
+        JPanel panel7 = new JPanel();
+        JPanel panel8 = new JPanel();
+        JPanel panel9 = new JPanel();
+        JPanel panel10 = new JPanel();
+
+        panel6.setBackground(Color.gray);
+        panel7.setBackground(Color.darkGray);
+        panel8.setBackground(Color.lightGray);
+        panel9.setBackground(Color.black);
+        panel10.setBackground(Color.pink);
+
+        panel6.setPreferredSize(new Dimension(50,50));
+        panel7.setPreferredSize(new Dimension(50,50));
+        panel8.setPreferredSize(new Dimension(50,50));
+        panel9.setPreferredSize(new Dimension(50,50));
+        panel10.setPreferredSize(new Dimension(50,50));
+
+
+        // ------sub panels
+
         frame.add(panel1,BorderLayout.NORTH);
         frame.add(panel2, BorderLayout.SOUTH);
+        frame.add(panel3, BorderLayout.WEST);
+        frame.add(panel4, BorderLayout.EAST);
+        frame.add(panel5, BorderLayout.CENTER);
 
 
     }
