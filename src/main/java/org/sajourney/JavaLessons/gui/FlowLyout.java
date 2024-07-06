@@ -19,7 +19,7 @@ public class FlowLyout {
         frame.setLayout(new FlowLayout(FlowLayout.LEADING, 10,50));
 
         JPanel panel = new JPanel();
-        panel.setPreferredSize(new Dimension (250,250));
+        panel.setPreferredSize(new Dimension (100,250));
         panel.setBackground(Color.orange);
         panel.setLayout(new FlowLayout());
 
