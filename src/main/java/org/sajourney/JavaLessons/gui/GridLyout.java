@@ -17,7 +17,7 @@ public class GridLyout {
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(500,500);
-        frame.setLayout(new GridLayout(3,2,0,0));
+        frame.setLayout(new GridLayout(3,3,10,10));
 
 
         frame.add(new JButton("1"));
@@ -25,6 +25,10 @@ public class GridLyout {
         frame.add(new JButton("3"));
         frame.add(new JButton("4"));
         frame.add(new JButton("5"));
+        frame.add(new JButton("6"));
+        frame.add(new JButton("6"));
+        frame.add(new JButton("6"));
+        frame.add(new JButton("6"));
         frame.add(new JButton("6"));
         frame.setVisible(true);
 
