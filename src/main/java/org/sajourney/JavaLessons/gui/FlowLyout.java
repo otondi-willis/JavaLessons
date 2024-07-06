@@ -36,6 +36,7 @@ public class FlowLyout {
         panel.add(new JButton("8"));
         panel.add(new JButton("9"));
 
+        frame.add(panel);
         frame.setVisible(true);
 
         }
