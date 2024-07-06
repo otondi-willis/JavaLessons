@@ -30,6 +30,15 @@ public class BorderLyout {
         panel4.setBackground(Color.green);
         panel5.setBackground(Color.orange);
 
+        panel1.setPreferredSize(new Dimension(100,100));
+        panel2.setPreferredSize(new Dimension(100,100));
+        panel3.setPreferredSize(new Dimension(100,100));
+        panel4.setPreferredSize(new Dimension(100, 100));
+        panel5.setPreferredSize(new Dimension(100,100));
+
+        frame.add(panel1,BorderLayout.NORTH);
+        frame.add(panel2, BorderLayout.SOUTH);
+
 
     }
 }
