@@ -24,6 +24,10 @@ public class MyFrame extends JFrame implements ActionListener {
         chickenButton = new JRadioButton("chicken");
         chipsButton = new JRadioButton("chips");
 
+        pizzaButton.addActionListener(this);
+        chickenButton.addActionListener(this);
+        chipsButton.addActionListener(this);
+
         ButtonGroup buttonGroup = new ButtonGroup();
         buttonGroup.add(pizzaButton);
         buttonGroup.add(chickenButton);
@@ -41,9 +45,13 @@ public class MyFrame extends JFrame implements ActionListener {
     }
     @Override
     public void actionPerformed(ActionEvent e) {
-        if (e.getSource()==button){
-            System.out.println(checkBox.isSelected());
+        if (e.getSource()==pizzaButton){
+            System.out.println("You selected pizza");
+        } else  if (e.getSource()==chickenButton){
+            System.out.println("You selected chicken");
+        } else {
 
+                System.out.println("You selected chips");
 
         }
 
