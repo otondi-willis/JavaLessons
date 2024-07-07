@@ -17,8 +17,11 @@ public class OptionPane {
 //        JOptionPane.showConfirmDialog(null,"Do you even code?","This is my title", JOptionPane.YES_NO_OPTION);
 //        JOptionPane.showConfirmDialog(null,"Do you even code?","This is my title", JOptionPane.YES_NO_CANCEL_OPTION);
 
-        String name = JOptionPane.showInputDialog("What is your name?");
-        System.out.println("my name is " + name);
+//        String name = JOptionPane.showInputDialog("What is your name?");
+//        System.out.println("my name is " + name);
+
+        JOptionPane.showOptionDialog(null,"you are awesome","secret message",JOptionPane.YES_NO_CANCEL_OPTION,JOptionPane.INFORMATION_MESSAGE,null,null, 0);
+
 
 
 
