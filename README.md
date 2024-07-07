@@ -1,2 +1,2 @@
 ﻿# JAVA lessons
- This repo entails tuitorial snapshots from various instructors.
+ This repo entails JAVA tuitorial snapshots from various instructors.
