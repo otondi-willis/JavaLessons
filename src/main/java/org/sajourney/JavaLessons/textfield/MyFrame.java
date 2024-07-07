@@ -23,6 +23,9 @@ public class MyFrame extends JFrame implements ActionListener {
         textField.setFont(new Font("Consolas",Font.PLAIN,35));
         textField.setForeground(new Color(0x00c00100));
         textField.setBackground(new Color(0x00fcf4f4));
+        textField.setCaretColor(Color.WHITE);
+        textField.setText("UserName");
+        textField.setEditable(false);
 
         this.add(button);
         this.add(textField);
