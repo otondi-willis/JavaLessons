@@ -13,8 +13,10 @@ public class MyFrame extends JFrame implements ActionListener {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(new FlowLayout());
 
+        String[] animals = {"dog","cat","bird"};
+        comboBox = new JComboBox(animals);
 
-
+        this.add(comboBox);
         this.pack();
         this.setVisible(true);
     }
