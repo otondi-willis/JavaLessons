@@ -15,6 +15,7 @@ public class OptionPane {
 
 
         JOptionPane.showConfirmDialog(null,"Do you even code?","This is my title", JOptionPane.YES_NO_OPTION);
+        JOptionPane.showConfirmDialog(null,"Do you even code?","This is my title", JOptionPane.YES_NO_CANCEL_OPTION);
 
 
 
