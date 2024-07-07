@@ -8,6 +8,8 @@ public class OptionPane {
         //pop up standard dialogue box that prompts users for a value or informs them sth
 
         JOptionPane.showMessageDialog(null,"Hello there","title",JOptionPane.PLAIN_MESSAGE);
+        JOptionPane.showMessageDialog(null,"Hello there","title",JOptionPane.INFORMATION_MESSAGE);
+
 
 
     }
