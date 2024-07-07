@@ -6,19 +6,14 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class MyFrame extends JFrame implements ActionListener {
-    JButton button;
-    JCheckBox checkBox;
+
     JRadioButton pizzaButton;
     JRadioButton chipsButton;
     JRadioButton chickenButton;
-    ImageIcon checkIcon;
 
     MyFrame(){
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(new FlowLayout());
-
-//        xIcon = new ImageIcon("D:\\HT\\Teleafia_patient_app\\assets\\about_us.PNG");
-//        checkIcon = new ImageIcon("D:\\HT\\Teleafia_patient_app\\assets\\bmi.PNG");
 
         pizzaButton = new JRadioButton("pizza");
         chickenButton = new JRadioButton("chicken");
