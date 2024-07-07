@@ -11,9 +11,13 @@ public class MyFrame extends JFrame implements ActionListener {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(new FlowLayout());
 
+        JButton button = new JButton("Submit");
+
+
+
         JTextField textField = new JTextField();
         textField.setPreferredSize(new Dimension(250, 40));
-
+        this.add(button);
         this.add(textField);
         this.pack();
         this.setVisible(true);
