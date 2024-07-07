@@ -20,9 +20,11 @@ public class OptionPane {
 //        String name = JOptionPane.showInputDialog("What is your name?");
 //        System.out.println("my name is " + name);
 
+        String[] responses = {"No, you are awesome", "thank you","*blush*"};
+
         ImageIcon icon = new ImageIcon("C:\\Users\\ADMIN\\Desktop\\New folder\\dice1.PNG");
 
-        JOptionPane.showOptionDialog(null,"you are awesome","secret message",JOptionPane.YES_NO_CANCEL_OPTION,JOptionPane.INFORMATION_MESSAGE,icon,null, 0);
+        JOptionPane.showOptionDialog(null,"you are awesome","secret message",JOptionPane.YES_NO_CANCEL_OPTION,JOptionPane.INFORMATION_MESSAGE,icon,responses, 0);
 
 
 
