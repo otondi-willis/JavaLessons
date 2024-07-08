@@ -28,6 +28,8 @@ public class SliderDemo implements ChangeListener {
 
         slider.setPaintLabels(true);
 
+        slider.setOrientation(SwingConstants.VERTICAL);
+
 
         panel.add(slider);
         panel.add(label);
