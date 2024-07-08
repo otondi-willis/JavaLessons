@@ -5,6 +5,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
+import java.io.File;
 
 public class MyFrame extends JFrame implements ActionListener {
 
@@ -55,7 +56,13 @@ public class MyFrame extends JFrame implements ActionListener {
         if (e.getSource()==loadItem){
             JFileChooser fileChooser = new JFileChooser();
 
-            fileChooser.showOpenDialog(null);//select file to open
+            int response = fileChooser.showOpenDialog(null);//select file to open
+
+            if(response == JFileChooser.APPROVE_OPTION){
+                File file = new File(fileChooser.getSelectedFile().getAbsolutePath());
+                System.out.println(file);
+
+            }
         }
 
     }
