@@ -15,6 +15,7 @@ public class SliderDemo implements ChangeListener {
         frame = new JFrame("Slider Demo");
         panel = new JPanel();
         label = new JLabel();
+        slider = new JSlider(0,100,50);
 
 
     }
