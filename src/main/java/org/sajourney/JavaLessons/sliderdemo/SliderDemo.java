@@ -30,6 +30,10 @@ public class SliderDemo implements ChangeListener {
 
         slider.setOrientation(SwingConstants.VERTICAL);
 
+        label.setText("°C = " + slider.getValue());
+
+        slider.addChangeListener(this);
+
 
         panel.add(slider);
         panel.add(label);
@@ -43,6 +47,7 @@ public class SliderDemo implements ChangeListener {
 
     @Override
     public void stateChanged(ChangeEvent e) {
+        label.setText("°C = " + slider.getValue());
 
     }
 }
