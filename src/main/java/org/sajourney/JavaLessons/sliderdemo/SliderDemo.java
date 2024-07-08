@@ -26,6 +26,8 @@ public class SliderDemo implements ChangeListener {
         slider.setPaintTicks(true);
         slider.setMajorTickSpacing(25);
 
+        slider.setPaintLabels(true);
+
 
         panel.add(slider);
         panel.add(label);
