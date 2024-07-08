@@ -2,5 +2,9 @@ package org.sajourney.JavaLessons.menubar;
 
 public class Main {
 
-    MyFrame frame = new MyFrame();
+    public static void main(String[] args){
+        MyFrame frame = new MyFrame();
+    }
+
+
 }
