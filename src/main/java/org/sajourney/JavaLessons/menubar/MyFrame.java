@@ -30,6 +30,7 @@ public class MyFrame extends JFrame implements ActionListener {
         saveItem.addActionListener(this);
         exitItem.addActionListener(this);
 
+        fileMenu.setMnemonic(KeyEvent.VK_F);// alt + f for file
         loadItem.setMnemonic(KeyEvent.VK_L);// L shortcut
 
 
