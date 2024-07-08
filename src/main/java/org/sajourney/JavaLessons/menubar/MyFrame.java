@@ -7,6 +7,10 @@ import java.awt.event.ActionListener;
 
 public class MyFrame extends JFrame implements ActionListener {
 
+    JMenuItem loadItem ;
+    JMenuItem saveItem ;
+    JMenuItem exitItem ;
+
     MyFrame(){
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(500,500);
@@ -17,9 +21,14 @@ public class MyFrame extends JFrame implements ActionListener {
         JMenu editMenu = new JMenu("Edit");
         JMenu helpMenu = new JMenu("Help");
 
-        JMenuItem loadItem = new JMenuItem("Load");
-        JMenuItem saveItem = new JMenuItem("Save");
-        JMenuItem exitItem = new JMenuItem("Exit");
+        loadItem = new JMenuItem("Load");
+        saveItem = new JMenuItem("Save");
+        exitItem = new JMenuItem("Exit");
+
+        loadItem.addActionListener(this);
+        saveItem.addActionListener(this);
+        exitItem.addActionListener(this);
+
 
         fileMenu.add(loadItem);
         fileMenu.add(saveItem);
@@ -38,6 +47,9 @@ public class MyFrame extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        if (e.getSource()==loadItem){
+            System.out.println("Loading the item");
+        }
 
     }
 }
