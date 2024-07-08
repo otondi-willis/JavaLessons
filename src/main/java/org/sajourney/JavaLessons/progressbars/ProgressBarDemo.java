@@ -6,7 +6,7 @@ import java.awt.*;
 public class ProgressBarDemo {
 
     JFrame frame = new JFrame();
-    JProgressBar bar = new JProgressBar();
+    JProgressBar bar = new JProgressBar(0,500);
     ProgressBarDemo(){
 
         bar.setValue(0);
@@ -25,17 +25,17 @@ public class ProgressBarDemo {
 
     }
     public void fill(){
-        int counter = 0;
+        int counter = 500;
 
-        while(counter <= 100){
+        while(counter > 0){
             bar.setValue(counter);
 
             try {
-                Thread.sleep(1000);
+                Thread.sleep(100);
             } catch (InterruptedException e){
                 e.printStackTrace();
             }
-            counter +=10;
+            counter -=10;
 
         }
             bar.setString("DONE");
