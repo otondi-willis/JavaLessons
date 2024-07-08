@@ -20,6 +20,13 @@ public class SliderDemo implements ChangeListener {
 
         slider.setPreferredSize(new Dimension(400,200));
 
+        slider.setPaintTicks(true);
+        slider.setMinorTickSpacing(10);
+
+        slider.setPaintTicks(true);
+        slider.setMajorTickSpacing(25);
+
+
         panel.add(slider);
         panel.add(label);
         frame.add(panel);
