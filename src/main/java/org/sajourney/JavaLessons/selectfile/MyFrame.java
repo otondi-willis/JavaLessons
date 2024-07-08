@@ -56,9 +56,10 @@ public class MyFrame extends JFrame implements ActionListener {
         if (e.getSource()==loadItem){
             JFileChooser fileChooser = new JFileChooser();
 
-            int response = fileChooser.showOpenDialog(null);//select file to open
+            //int response = fileChooser.showOpenDialog(null);//select file to open
+            int SaveResponse = fileChooser.showSaveDialog(null);//select file to open
 
-            if(response == JFileChooser.APPROVE_OPTION){
+            if(SaveResponse == JFileChooser.APPROVE_OPTION){
                 File file = new File(fileChooser.getSelectedFile().getAbsolutePath());
                 System.out.println(file);
 
