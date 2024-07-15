@@ -26,5 +26,10 @@ public class Iterators {
         System.out.println();
         fruits.forEach(System.out::println);
 
+        fruits.forEach(f->{
+            f = "fruits:" + f;
+            System.out.println(f);
+        });
+
     }
 }
