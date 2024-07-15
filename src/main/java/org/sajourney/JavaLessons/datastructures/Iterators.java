@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class Iterators {
     public static void main(String[] args) {
-        Set fruits = new HashSet();
+        Set<String> fruits = new HashSet<>();
         fruits.add("apple");
         fruits.add("lemon");
         fruits.add("banana");
@@ -15,5 +15,11 @@ public class Iterators {
         while(i.hasNext()){
             System.out.println(i.next());
         }
+
+        //Enhanced for loops
+        for(String fruit : fruits){
+            System.out.println(fruit);
+        }
+
     }
 }
