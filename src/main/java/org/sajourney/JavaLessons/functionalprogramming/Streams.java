@@ -27,5 +27,11 @@ public class Streams {
                .map(String::toUpperCase)
                .forEach(System.out::println);
 
+       List<Integer> number = List.of(0,2,5,1,7,4,3);
+
+       int num = number.stream().reduce(0, (a,b) -> a+b);
+        System.out.println(num);
+
+
     }
 }
