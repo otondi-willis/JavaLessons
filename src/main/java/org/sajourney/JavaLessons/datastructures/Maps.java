@@ -16,6 +16,9 @@ public class Maps {
         fruitCalories.put("lemon",70);// overrides existing value
         fruitCalories.remove("lemon");
 
+        System.out.println("=====================================");
+        fruitCalories.forEach((k,v)-> System.out.println(k + ":" + v));
+
         System.out.println(fruitCalories.size());
         System.out.println(fruitCalories.containsKey("lemon"));
         System.out.println(fruitCalories.containsValue(95));
