@@ -15,9 +15,7 @@ public class Lists {
         fruits.add("lemon");
         fruits.remove(4);
 
-
         fruits.set(2,"grape");
-
 
         System.out.println(fruits);
         System.out.println(fruits.get(2));
