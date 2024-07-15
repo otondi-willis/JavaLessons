@@ -1,6 +1,7 @@
 package org.sajourney.JavaLessons.functionalprogramming;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class Streams {
     public static void main(String[] args) {
@@ -10,6 +11,21 @@ public class Streams {
 
         Arrays.stream(numbers)
                 .forEach(n-> System.out.print(n+1+" "));
+
+        List<String> veggies = List.of(
+                "spinach",
+                "cabbage",
+                "peas",
+                "green beans",
+                "brussels sprouts",
+                "carrots");
+
+        boolean isPeas = veggies.stream().anyMatch(v->v.contains("peas"));
+        System.out.println(isPeas);
+
+       veggies.stream()
+               .map(String::toUpperCase)
+               .forEach(System.out::println);
 
     }
 }
