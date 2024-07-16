@@ -1,5 +1,6 @@
 package org.sajourney.JavaLessons.datastructures;
 
+import java.util.Comparator;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -15,6 +16,14 @@ public class TreeSets {
         treeSet.add(6);
 
         System.out.println(treeSet);
+
+        //arranged based on string length
+        Set<String> wordSet = new TreeSet<>(Comparator.comparing(String::length));
+        wordSet.add("tiger");
+        wordSet.add("giraffe");
+        wordSet.add("bear");
+
+        System.out.println(wordSet);
 
 
     }
