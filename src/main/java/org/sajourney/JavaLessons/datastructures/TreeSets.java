@@ -22,6 +22,8 @@ public class TreeSets {
         wordSet.add("tiger");
         wordSet.add("giraffe");
         wordSet.add("bear");
+        wordSet.add("wolf");
+
 
         System.out.println(wordSet);
 
