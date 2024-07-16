@@ -16,20 +16,17 @@ public class ExceptionHandling3 {
     public static void main(String[] args) {
 
         File file = new File("D:\\3A\\filenumber.txt");
+        Scanner fileReader = null;
         try {
-            Scanner fileReader = new Scanner(file);
-            while(fileReader.hasNext()){
+            fileReader = new Scanner(file);
+            while (fileReader.hasNext()) {
                 System.out.println(fileReader.nextDouble());
             }
-        }
-        catch (FileNotFoundException | InputMismatchException e){
+        } catch (FileNotFoundException | InputMismatchException e) {
             e.printStackTrace();
+        } finally {
+            fileReader.close();
         }
-
-
-
-
-
 
 
     }

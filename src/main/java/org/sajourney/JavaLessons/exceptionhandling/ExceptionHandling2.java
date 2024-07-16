@@ -15,25 +15,21 @@ public class ExceptionHandling2 {
     public static void main(String[] args) {
 
         File file = new File("D:\\3A\\filenumber.txt");
+        Scanner fileReader = null;
         try {
-            Scanner fileReader = new Scanner(file);
-            while(fileReader.hasNext()){
+            fileReader = new Scanner(file);
+            while (fileReader.hasNext()) {
                 System.out.println(fileReader.nextDouble());
             }
-        }
-
-        catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
-        }
-        catch (InputMismatchException e){
+        } catch (InputMismatchException e) {
             e.printStackTrace();
+        } catch (Exception e) {
+
+        } finally {
+            fileReader.close();
         }
-        catch (Exception e){
-
-        }
-
-
-
 
 
     }
