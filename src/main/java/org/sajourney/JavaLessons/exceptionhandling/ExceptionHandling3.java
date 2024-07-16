@@ -9,9 +9,9 @@ import java.util.Scanner;
 public class ExceptionHandling3 {
     /*
      * ways to handle multiple exceptions
-     * Polymorphism
-     * series of catch blocks
-     * multiple catch block
+     * Polymorphism- handles a hierarchy of exceptions
+     * series of catch blocks- handles different exceptions in different ways
+     * multiple catch block - handles unrelated exceptions in the same way
      * */
     public static void main(String[] args) {
 
