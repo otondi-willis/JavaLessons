@@ -2,6 +2,7 @@ package org.sajourney.JavaLessons.datastructures;
 
 import java.util.ArrayDeque;
 import java.util.LinkedList;
+import java.util.PriorityQueue;
 import java.util.Queue;
 
 public class Queues {
@@ -10,7 +11,10 @@ public class Queues {
         // FIFO
         //ArrayDeque implementation-better performance
         //LinkedList implementation-better if moving current element during iteration
-        Queue fruits = new ArrayDeque();
+        //PriorityQueue - retrieval order is the natural order...for strings its alphabetically
+        // for the numbers...lowest to largest
+
+        Queue fruits = new PriorityQueue();
         fruits.add("apple");
         fruits.add("lemon");
         fruits.add("banana");
