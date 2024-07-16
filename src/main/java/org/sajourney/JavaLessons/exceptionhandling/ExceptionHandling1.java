@@ -11,6 +11,9 @@ public class ExceptionHandling1 {
         }
         catch (IOException e){
             System.out.println("Sorry, an error has occured" + e.getMessage());
+            e.printStackTrace();
         }
+        //Stack Trace
+        //an interactive log of method calls that led to a thrown exception
     }
 }
