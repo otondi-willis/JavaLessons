@@ -10,7 +10,7 @@ public class ExceptionHandling1 {
             file.createNewFile();
         }
         catch (IOException e){
-            System.out.println("Sorry, an error has occured");
+            System.out.println("Sorry, an error has occured" + e.getMessage());
         }
     }
 }
