@@ -11,6 +11,18 @@ public class Application {
 
         Room nairobi = new Room("Eastleigh","Suite",5,250.00);
 
+        //use of arrays is time consuming
+        Room[] rms = new Room[3];
+        rms[0]=kiambu;
+        rms[1]=siaya;
+        rms[2]=kisumu;
+
+        Room[] moreRooms = new Room[4];
+        System.arraycopy(rms,0,moreRooms,0,rms.length);
+        moreRooms[moreRooms.length-1]= nairobi;
+        //=================================================================
+
+
         //Use of collections to manage rooms
         Collection<Room> rooms = List.of(kiambu,nairobi,siaya,kisumu);
         double total = getPotentialRevenue(rooms);
