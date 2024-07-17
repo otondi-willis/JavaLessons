@@ -10,4 +10,9 @@ public class Implementation implements Contract{
     public void term2() {
         System.out.println("implementation: term2");
     }
+
+    @Override
+    public void extendedTerm() {
+        System.out.println("implementation: extendedTerm ");
+    }
 }

@@ -13,6 +13,7 @@ public class Application {
     private static void printTerms(Contract contract){
         contract.term1();
         contract.term2();
+        contract.extendedTerm();
 
     }
 }
