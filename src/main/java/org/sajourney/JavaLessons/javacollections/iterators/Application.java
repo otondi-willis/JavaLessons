@@ -16,9 +16,11 @@ public class Application {
         Collection<Room> rooms = new ArrayList<>(Arrays.asList(piccadilly,cambridge,westminister));
 
         Iterator<Room> iterator = rooms.iterator();
-        System.out.println(iterator.next().getName());
-        System.out.println(iterator.next().getName());
-        System.out.println(iterator.next().getName());
+
+        while(iterator.hasNext()){
+            Room room = iterator.next();
+            System.out.println(room.getName());
+        }
 
 
     }
