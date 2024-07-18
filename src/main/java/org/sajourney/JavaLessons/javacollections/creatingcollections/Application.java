@@ -19,7 +19,7 @@ public class Application {
 
         Collection<String> favoriteThings = new HashSet<>(c);
 
-        System.out.println(c);
+        System.out.println(favoriteThings);
 
 
     }
