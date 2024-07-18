@@ -18,13 +18,16 @@ public class Application1 {
         piccadilly.setPetFriendly(true);
         victoria.setPetFriendly(true);
 
+        Collection<Room> removeRooms = new ArrayList<>();
+
         for(Room room : rooms){
             { if(room.isPetFriendly())
                 {
-                    rooms.remove(room);
+                    removeRooms.add(room);
                 }
             };
         }
+        rooms.removeAll(removeRooms);
         rooms.stream()
                 .forEach(r-> System.out.println(r.getName()));
 
