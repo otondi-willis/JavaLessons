@@ -21,6 +21,10 @@ public class Application {
             Room room = iterator.next();
             System.out.println(room.getName());
         }
+        System.out.println();
+        for(Room room: rooms){
+            System.out.println(room.getName());
+        }
 
 
     }
