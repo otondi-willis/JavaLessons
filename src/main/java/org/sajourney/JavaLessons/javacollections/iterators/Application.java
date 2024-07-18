@@ -5,6 +5,7 @@ import org.sajourney.JavaLessons.datastructures.javacollections.Room;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Iterator;
 
 public class Application {
     public static void main(String[] args) {
@@ -13,6 +14,11 @@ public class Application {
         Room westminister = new Room("Westminister","Premier Room",4,200.00);
 
         Collection<Room> rooms = new ArrayList<>(Arrays.asList(piccadilly,cambridge,westminister));
+
+        Iterator<Room> iterator = rooms.iterator();
+        System.out.println(iterator.next().getName());
+        System.out.println(iterator.next().getName());
+        System.out.println(iterator.next().getName());
 
 
     }
