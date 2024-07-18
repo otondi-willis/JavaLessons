@@ -5,12 +5,15 @@ public class Room {
     private String type;
     private int capacity;
     private double rate;
+    boolean petFriendly;
 
     public Room(String name, String type, int capacity, double rate){
         this.name=name;
         this.type=type;
         this.capacity=capacity;
         this.rate=rate;
+
+        petFriendly=false;
     }
     public String getName(){
         return name;
@@ -41,5 +44,13 @@ public class Room {
 
     public void setRate(double rate) {
         this.rate = rate;
+    }
+
+    public void setPetFriendly(boolean petFriendly) {
+        this.petFriendly = petFriendly;
+    }
+
+    public boolean isPetFriendly() {
+        return petFriendly;
     }
 }
