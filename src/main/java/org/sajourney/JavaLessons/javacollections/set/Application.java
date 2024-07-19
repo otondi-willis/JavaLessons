@@ -12,9 +12,10 @@ public class Application {
         Room piccadilly = new Room("Picaddilly","Guest Room",3,125.00);
         Room westminister = new Room("Westminister","Premier Room",4,200.00);
         Room westministerDuplicate = new Room("Westminister","Premier Room",4,200.00);
+        Room victoria = new Room("Victoria","Premier Room",4,200.00);
 
         Set<Room> otherRooms = Set.of(piccadilly,cambridge);//unmodifiable set
-        otherRooms.add(westministerDuplicate);
+        //otherRooms.add(westministerDuplicate);
 
         Set<Room> rooms = new LinkedHashSet<>();
         rooms.add(piccadilly);
@@ -22,8 +23,11 @@ public class Application {
         rooms.add(cambridge);
         rooms.add(westminister);
         rooms.add(westministerDuplicate);
+        rooms.add(victoria);
 
-        rooms.stream()
+        Set<Room> moreRooms = Set.copyOf(rooms);
+
+        moreRooms.stream()
                 .map(r -> r.getName())
                 .forEach(System.out::println);
     }
