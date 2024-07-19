@@ -24,9 +24,8 @@ public class LambdaExpressions {
         //stream as a pipeline that elements flow through
 
         rooms.stream() //invokation to start the pipeline
-                .filter(Room::isPetFriendly)
-                .forEach(room->System.out.println(room.getName()));
-        //terminal operation(return a result or modify elements that are streamed into it)
+                .filter(Room::isPetFriendly)//allows a method to be passed into a function
+                .forEach(room->System.out.println(room.getName()));//terminal operation(return a result or modify elements that are streamed into it)
 
 
 
