@@ -13,6 +13,9 @@ public class Application {
         Room westminister = new Room("Westminister","Premier Room",4,200.00);
         Room westministerDuplicate = new Room("Westminister","Premier Room",4,200.00);
 
+        Set<Room> otherRooms = Set.of(piccadilly,cambridge);//unmodifiable set
+        otherRooms.add(westministerDuplicate);
+
         Set<Room> rooms = new LinkedHashSet<>();
         rooms.add(piccadilly);
         rooms.add(cambridge);
