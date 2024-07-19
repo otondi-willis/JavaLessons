@@ -7,6 +7,7 @@ public class Room {
     private double rate;
     boolean petFriendly;
 
+
     public Room(String name, String type, int capacity, double rate){
         this.name=name;
         this.type=type;
@@ -53,4 +54,5 @@ public class Room {
     public boolean isPetFriendly() {
         return petFriendly;
     }
+
 }
