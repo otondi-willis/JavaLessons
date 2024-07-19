@@ -8,6 +8,7 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 public class StreamOperations {
     public static void main(String[] args) {
@@ -21,13 +22,9 @@ public class StreamOperations {
         piccadilly.setPetFriendly(true);
         victoria.setPetFriendly(true);
 
-        Collection<Room> petFriendlyRooms = new ArrayList<>();
-
-        //stream as a pipeline that elements flow through
-
-        rooms.stream() //invokation to start the pipeline
+        Collection<Room> petFriendlyRooms = rooms.stream() //invokation to start the pipeline
                 .filter(Room::isPetFriendly)
-                .forEach(room->petFriendlyRooms.add(room));//terminal operation(return a result or modify elements that are streamed into it)
+                .collect(Collectors.toList());//terminal operation(return a result or modify elements that are streamed into it)
 
         //passing in external object and modifying it within a stream
         //should never use both
