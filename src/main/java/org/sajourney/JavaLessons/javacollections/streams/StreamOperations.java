@@ -28,9 +28,12 @@ public class StreamOperations {
 
         //passing in external object and modifying it within a stream
         //should never use both
-        petFriendlyRooms.stream()
-                .map(r->r.getName())
-                .forEach(System.out::println);
+        double total = petFriendlyRooms.stream()
+
+                .mapToDouble(Room::getRate)
+                .sum();
+        System.out.println(total);
+
 
 
 
