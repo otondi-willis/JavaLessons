@@ -5,6 +5,7 @@ import org.sajourney.JavaLessons.datastructures.javacollections.Room;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
+import java.util.stream.Collectors;
 
 public class RoomService {
     public Collection<Room> inventory;
@@ -27,7 +28,11 @@ public class RoomService {
         return matches;
     }
     public Collection<Room> getRoomByRateAndType(final double rate, final String type){
-        return null;
+
+         return this.inventory.stream()
+                 .filter(r -> r.getRate()<rate)
+                 .filter(r->r.getType().equals(type))
+                 .collect(Collectors.toList());
     }
     public boolean hasRoom(Room room){
         return this.inventory.contains(room);
