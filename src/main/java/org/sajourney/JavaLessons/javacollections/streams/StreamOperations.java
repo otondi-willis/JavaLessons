@@ -29,7 +29,8 @@ public class StreamOperations {
         //passing in external object and modifying it within a stream
         //should never use both
         petFriendlyRooms.stream()
-                .forEach(r-> System.out.println(r.getName()));
+                .map(r->r.getName())
+                .forEach(System.out::println);
 
 
 
