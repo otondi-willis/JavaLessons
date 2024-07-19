@@ -11,7 +11,7 @@ public class TreeSets {
 
         NavigableSet<Integer> numberTree = new TreeSet<>(numbers);
 
-        numberTree.headSet(1750).stream()
+        numberTree.tailSet(1750).stream()
                 .forEach(System.out::println);
 
     }
