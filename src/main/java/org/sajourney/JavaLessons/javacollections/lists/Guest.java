@@ -30,4 +30,15 @@ public class Guest {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
+//    public List<Room> getPreferredRooms() {
+//        return preferredRooms;
+//    }
+//
+//    public void setPreferredRooms(List<Room> preferredRooms) {
+//        this.preferredRooms = preferredRooms;
+//    }
+    public String toString(){
+        return firstName + " " + lastName + "(Loyalty program member In: " + loyaltyProgramMember + ")";
+    }
 }
