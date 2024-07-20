@@ -15,6 +15,17 @@ public class Application {
         checkinList.add(maria);
 
         print(checkinList);
+        checkinList.add(0,sonia);
+        print(checkinList);
+
+        checkinList.get(2).setLoyaltyProgramMember(true);
+        checkinList.addAll(1,List.of(maria,siri));
+        print(checkinList);
+
+        checkinList.remove(checkinList.size()-1);
+        print(checkinList);
+        System.out.println(checkinList.indexOf(john));
+
 
     }
     public static void print(List<Guest> list){
