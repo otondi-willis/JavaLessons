@@ -2,10 +2,7 @@ package org.sajourney.JavaLessons.javacollections.queues;
 
 import org.sajourney.JavaLessons.javacollections.lists.Guest;
 
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
 public class Application {
 
@@ -15,7 +12,10 @@ public class Application {
             Guest sonia = new Guest("sonia","amolo",true);
             Guest siri = new Guest("siri","doe",true);
 
-            Queue<Guest> checkinQueue = new ArrayDeque<>();
+            Comparator<Guest> programComp
+                    = Comparator.comparing(Guest::isLoyaltyProgramMember).reversed();
+
+            Queue<Guest> checkinQueue = new PriorityQueue<>(programComp);
             checkinQueue.add(john);
             checkinQueue.add(maria);
             checkinQueue.add(sonia);
