@@ -5,6 +5,7 @@ import org.sajourney.JavaLessons.javacollections.lists.Guest;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class Application {
     public static void main(String[] args) {
@@ -18,11 +19,19 @@ public class Application {
         assignments.put(oxford,maria);
         assignments.put(piccadilly,john);
 
-        Guest guest = assignments.put(piccadilly,assignments.remove(oxford));
-        assignments.putIfAbsent(oxford,guest);
+        //Set<Map.Entry<Room, Guest>> cv = assignments.entrySet();
+        for (Map.Entry<Room,Guest> entry : assignments.entrySet()){
+            Room r = entry.getKey();
+            Guest g = entry.getValue();
 
-        System.out.println("oxford: " + assignments.get(new Room("oxford","suite",5,224)));
-        System.out.println("Piccadilly: " + assignments.get(piccadilly));
+            System.out.format("%s : %s%n", r.getName(),g.getFirstName());
+        }
+
+//        Guest guest = assignments.put(piccadilly,assignments.remove(oxford));
+//        assignments.putIfAbsent(oxford,guest);
+//
+//        System.out.println("oxford: " + assignments.get(new Room("oxford","suite",5,224)));
+//        System.out.println("Piccadilly: " + assignments.get(piccadilly));
 
 
     }
