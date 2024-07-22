@@ -16,7 +16,7 @@ public class Application {
             Guest siri = new Guest("siri","doe",true);
 
             Queue<Guest> checkinQueue = new ArrayDeque<>();
-            Guest guest = checkinQueue.poll();
+            Guest guest = checkinQueue.remove();
             System.out.println(guest);
 
 
