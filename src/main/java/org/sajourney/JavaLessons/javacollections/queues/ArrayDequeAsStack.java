@@ -9,13 +9,17 @@ public class ArrayDequeAsStack {
         public static void main(String[] args) {
             Deque<String> messageStack = new ArrayDeque<>();
             messageStack.push("message 1");
-            print(messageStack);
 
             messageStack.push("message 2");
-            print(messageStack);
+
             messageStack.push("message 3");
-            print(messageStack);
+
             messageStack.push("message 4");
+            print(messageStack);
+
+            System.out.println(messageStack.pop());
+            System.out.println(messageStack.pop());
+            System.out.println(messageStack.peek());
             print(messageStack);
 
 
