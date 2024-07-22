@@ -18,6 +18,9 @@ public class Application {
         assignments.put(oxford,maria);
         assignments.put(piccadilly,john);
 
+        Guest guest = assignments.put(piccadilly,assignments.remove(oxford));
+        assignments.putIfAbsent(oxford,guest);
+
         System.out.println("oxford: " + assignments.get(new Room("oxford","suite",5,224)));
         System.out.println("Piccadilly: " + assignments.get(piccadilly));
 
