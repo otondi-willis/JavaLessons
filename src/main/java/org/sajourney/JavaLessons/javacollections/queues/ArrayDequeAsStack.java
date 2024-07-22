@@ -19,6 +19,8 @@ public class ArrayDequeAsStack {
 
             System.out.println(messageStack.pop());
             System.out.println(messageStack.pop());
+            print(messageStack);
+            messageStack.push("message 5");
             System.out.println(messageStack.peek());
             print(messageStack);
 
