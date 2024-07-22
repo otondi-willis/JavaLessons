@@ -1,6 +1,6 @@
 package org.sajourney.JavaLessons.datastructures.javacollections;
 
-public class Room {
+public class Room implements Comparable<Room>{
     private String name;
     private String type;
     private int capacity;
@@ -55,4 +55,9 @@ public class Room {
         return petFriendly;
     }
 
+    @Override
+    public int compareTo(Room o) {
+        int result = this.getName().compareTo(o.getName());
+        return result != 0?result: this.getType().compareTo(o.getType());
+    }
 }
