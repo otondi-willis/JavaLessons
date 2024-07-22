@@ -18,11 +18,18 @@ public class Application {
             Queue<Guest> checkinQueue = new ArrayDeque<>();
             checkinQueue.offer(john);
             checkinQueue.offer(maria);
+            checkinQueue.offer(sonia);
+            checkinQueue.offer(siri);
+
             print(checkinQueue);
 
             Guest guest = checkinQueue.poll();
             print(checkinQueue);
             System.out.println(guest);
+
+            Guest guest1 = checkinQueue.peek();
+            print(checkinQueue);
+            System.out.println(guest1);
 
 
         }
