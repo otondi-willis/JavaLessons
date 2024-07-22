@@ -16,18 +16,18 @@ public class Application {
             Guest siri = new Guest("siri","doe",true);
 
             Queue<Guest> checkinQueue = new ArrayDeque<>();
-            checkinQueue.offer(john);
-            checkinQueue.offer(maria);
-            checkinQueue.offer(sonia);
-            checkinQueue.offer(siri);
+            checkinQueue.add(john);
+            checkinQueue.add(maria);
+            checkinQueue.add(sonia);
+            checkinQueue.add(siri);
 
             print(checkinQueue);
 
-            Guest guest = checkinQueue.poll();
+            Guest guest = checkinQueue.remove();
             print(checkinQueue);
             System.out.println(guest);
 
-            Guest guest1 = checkinQueue.peek();
+            Guest guest1 = checkinQueue.element();
             print(checkinQueue);
             System.out.println(guest1);
 
