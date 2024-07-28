@@ -3,7 +3,8 @@ package org.sajourney.JavaLessons.datastructures.javacollections;
 import java.util.Comparator;
 
 public class Room implements Comparable<Room>{
-    public static Comparator<Room> RATE_COMPARATOR = Comparator.comparing(Room::getRate);
+    public static Comparator<Room> RATE_COMPARATOR = Comparator.comparing(Room::getRate)
+            .thenComparing(Room::getName);
     private String name;
     private String type;
     private int capacity;
