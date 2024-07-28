@@ -12,10 +12,11 @@ public class Application {
             Room kisumu = new Room("Eastleigh","Suite1",6,251.00);
 
            List<Room> rooms = new ArrayList<>(List.of(kiambu,siaya,kisumu));
+            rooms.sort(Comparator.naturalOrder());
            rooms.stream()
                    .forEach(r-> System.out.format("%-15s %-15s %-10f %n", r.getName(),r.getType(),r.getRate()));
 
-            rooms.sort(Comparator.naturalOrder());
+
 
         }
 
