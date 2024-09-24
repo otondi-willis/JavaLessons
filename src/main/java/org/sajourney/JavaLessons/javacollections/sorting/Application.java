@@ -13,6 +13,10 @@ public class Application {
 
            List<Room> rooms = new ArrayList<>(List.of(kiambu,siaya,kisumu));
             rooms.sort(Room.RATE_COMPARATOR.reversed());
+
+            int result = Collections.binarySearch(rooms,kiambu,Room.RATE_COMPARATOR);
+            System.out.println("Result: " + result);
+
            rooms.stream()
                    .forEach(r-> System.out.format("%-15s %-15s %-10f %n", r.getName(),r.getType(),r.getRate()));
 
