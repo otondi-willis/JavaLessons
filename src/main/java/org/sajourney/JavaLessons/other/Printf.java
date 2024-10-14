@@ -1,4 +1,4 @@
-package org.sajourney.JavaLessons;
+package org.sajourney.JavaLessons.other;
 
 public class Printf {
     /* printf() = an optional method to control, format, and display

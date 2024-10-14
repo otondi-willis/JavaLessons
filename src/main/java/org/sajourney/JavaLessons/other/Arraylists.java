@@ -1,4 +1,4 @@
-package org.sajourney.JavaLessons;
+package org.sajourney.JavaLessons.other;
 
 import java.util.ArrayList;
 
