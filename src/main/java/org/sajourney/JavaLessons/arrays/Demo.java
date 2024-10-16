@@ -14,6 +14,9 @@ public class Demo {
             System.out.println(values[i]);
         }
 
+        //arrays of arrays
+        int arrays[][]= {{1,2},{3,4}};
+
 
 
     }
