@@ -7,6 +7,10 @@ public class Demo {
         nums[2]=9;//reinitializing the value of the third element
         System.out.println(nums[2]);
 
+        //making it dynamic
+        int values[] = new int[4];//by default all the values are zeros
+
+
 
     }
 }
