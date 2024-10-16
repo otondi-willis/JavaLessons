@@ -14,8 +14,16 @@ public class Demo {
             System.out.println(values[i]);
         }
 
-        //arrays of arrays
+        //arrays of arrays...rows x columns
         int arrays[][]= {{1,2},{3,4}};
+        System.out.println(arrays[1][0]);
+        for(int i=0;i<2;i++){
+            for(int j=0; j<2;j++){
+                System.out.print(arrays[i][j] + " ");
+
+            }
+            System.out.println();
+        }
 
 
 
