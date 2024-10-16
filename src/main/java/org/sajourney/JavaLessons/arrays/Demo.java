@@ -10,6 +10,10 @@ public class Demo {
         //making it dynamic
         int values[] = new int[4];//by default all the values are zeros
 
+        for(int i=0;i<4;i++){
+            System.out.println(values[i]);
+        }
+
 
 
     }
