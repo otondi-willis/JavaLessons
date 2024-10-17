@@ -33,6 +33,27 @@ public class Demo {
             System.out.println();
         }
 
+        //jagged arrays
+        int jags[][] = new int[3][];
+        jags[0]=new int[3];
+        jags[1]=new int[4];
+        jags[2]=new int[2];
+
+        for(int i=0;i<jags.length;i++){
+            for(int j=0;j<jags[i].length;j++){
+                jags[i][j] = (int)(Math.random()*10);
+            }
+
+        }
+
+        for (int k[]:jags){
+            for(int s:k){
+                System.out.print(s + " ");
+            }
+            System.out.println();
+        }
+
+
 
 
     }
