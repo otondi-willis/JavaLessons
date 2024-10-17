@@ -25,6 +25,14 @@ public class Demo {
             System.out.println();
         }
 
+        //use of enhanced for loop
+        for (int n[]:arrays){
+            for (int m:n){
+                System.out.print(m + " ");
+            }
+            System.out.println();
+        }
+
 
 
     }
