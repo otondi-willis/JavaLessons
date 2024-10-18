@@ -46,7 +46,7 @@ public class Demo {
 
         }
 
-        for (int k[]:jags){
+        for (int[] k:jags){
             for(int s:k){
                 System.out.print(s + " ");
             }
