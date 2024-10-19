@@ -23,7 +23,7 @@ public class Encapsulation {
     public static void main (String[] args){
         Example example=new Example();
         //example.name; name has private access
-        example.setAge(40, example);
+        example.setAge(40);
         System.out.println(example.getAge());
 
         example.setName("Omondi");
