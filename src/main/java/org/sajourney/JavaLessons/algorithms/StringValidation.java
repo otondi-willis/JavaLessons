@@ -18,11 +18,19 @@ public class StringValidation {
 
         return hasUppercase && hasLowercase && hasDigits;
     }
+    public static boolean isUppercaseOrLowercaseOrDigit(String s){
+        boolean hasUppercase = s.chars().anyMatch(Character::isUpperCase);
+        boolean hasLowercase = s.chars().anyMatch(Character::isLowerCase);
+        boolean hasDigits = s.chars().anyMatch(Character::isDigit);
+
+        return hasUppercase || hasLowercase || hasDigits;
+    }
     public static void main(String[] args){
         System.out.println(isUpperCase("omEra"));
         System.out.println(isLowerCase("omera"));
         System.out.println(isDigits("omera1"));
         System.out.println(isUppercaseAndLowercaseAndDigit("Omera1"));
+        System.out.println(isUppercaseOrLowercaseOrDigit("omera"));
     }
 
 }
