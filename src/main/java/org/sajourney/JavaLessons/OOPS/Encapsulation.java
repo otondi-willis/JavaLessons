@@ -14,12 +14,16 @@ class Example{
     public int getAge(){
         return age;
     }
+    public void setAge(int a){
+        age = a;
+    }
 
 }
 public class Encapsulation {
     public static void main (String[] args){
         Example example=new Example();
         //example.name; name has private access
+        example.setAge(40);
         System.out.println(example.getAge());
 
         example.setName("Omondi");
