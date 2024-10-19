@@ -25,12 +25,17 @@ public class StringValidation {
 
         return hasUppercase || hasLowercase || hasDigits;
     }
+    public static boolean isSpecialCharacter(String s){
+        return s.chars().anyMatch(ch->!Character.isLetterOrDigit(ch));
+    }
     public static void main(String[] args){
         System.out.println(isUpperCase("omEra"));
         System.out.println(isLowerCase("omera"));
         System.out.println(isDigits("omera1"));
         System.out.println(isUppercaseAndLowercaseAndDigit("Omera1"));
         System.out.println(isUppercaseOrLowercaseOrDigit("omera"));
+        System.out.println(isSpecialCharacter("omera@"));
+
     }
 
 }
