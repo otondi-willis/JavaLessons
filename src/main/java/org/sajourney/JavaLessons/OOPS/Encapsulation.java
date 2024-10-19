@@ -14,9 +14,8 @@ class Example{
     public int getAge(){
         return age;
     }
-    public void setAge(int age, Example example1){//lengthy way to assign local variable to an instance variable
-        Example example=example1;
-        example.age = age;
+    public void setAge(int age){
+       this.age = age; //this keyword reference the current object calling the setAge method.
     }
 
 }
