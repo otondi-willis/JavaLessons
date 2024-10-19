@@ -2,21 +2,29 @@ package org.sajourney.JavaLessons.OOPS;
 
 class Example{
     private String name;
-    private int age =30;
+    private int age;
 
 
     public String getName(){
         return name;
     }
+    public void setName(String n){
+        name = n;
+    }
     public int getAge(){
         return age;
     }
+
 }
 public class Encapsulation {
     public static void main (String[] args){
         Example example=new Example();
         //example.name; name has private access
         System.out.println(example.getAge());
+
+        example.setName("Omondi");
+
+        System.out.println(example.getName());
     }
 
 }
