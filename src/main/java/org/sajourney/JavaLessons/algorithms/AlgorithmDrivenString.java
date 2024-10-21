@@ -11,10 +11,21 @@ public class AlgorithmDrivenString {
         }
         return reversed.toString();
     }
+    public static String reverse2(String s){
+        if(s==null || s.isEmpty()){
+            return s;
+        }
+        StringBuilder sb = new StringBuilder(s);
+
+        return sb.reverse().toString();
+    }
     public static void main (String[] args){
         System.out.println(reverse(null));
         System.out.println(reverse("Omera"));
         System.out.println(reverse("Austin"));
+        System.out.println(reverse2(null));
+        System.out.println(reverse2("Omera"));
+        System.out.println(reverse2("Austin"));
 
     }
 }
