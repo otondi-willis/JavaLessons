@@ -1,5 +1,7 @@
 package org.sajourney.JavaLessons.algorithms;
 
+import java.util.Arrays;
+
 public class BinarySearch {
     public static boolean binarySearch(int[] arr, int item){
         int min = 0;
@@ -21,9 +23,12 @@ public class BinarySearch {
         return false;
     }
 
+
     public static void main (String[] args){
         int[] arr = {1,2,3,4,5,6,7,8};
         System.out.println(binarySearch(arr,9));
+
+        System.out.println(Arrays.binarySearch(arr,2));
 
     }
 }
