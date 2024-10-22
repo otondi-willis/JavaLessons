@@ -19,7 +19,8 @@ public class LinearSearchArrays {
         int[] arr={5,9,3,2,2,6,8};
 
         System.out.println(linearSearch(arr,1));
-        System.out.println(linearSearch2(arr,3));
+        linearSearch2(arr,3).ifPresent(System.out::println);
+        linearSearch2(arr,1).ifPresent(System.out::println);
 
     }
 }
