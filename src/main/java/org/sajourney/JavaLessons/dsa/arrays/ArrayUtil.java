@@ -14,9 +14,9 @@ public class ArrayUtil {
     }
 
     public static void main(String[] args){
-        int[] sampleArray = {2,4,5,6,4};
+
         ArrayUtil arrUtil = new ArrayUtil();
-        arrUtil.printArray(sampleArray);
+        arrUtil.printArray(new int[] {3,4,5,6,4});
         arrUtil.arrayDemo();
     }
 
