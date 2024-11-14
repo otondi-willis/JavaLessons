@@ -1,21 +1,31 @@
 package org.sajourney.JavaLessons.dsa.arrays;
 
 public class ArrayUtil {
-    public void printArray(int[] arr){
+    public static void printArray(int[] arr){
         int n = arr.length;
         for(int i=0; i<n;i++){
             System.out.print(arr[i] + " ");
         }
         System.out.println();
     }
-    public void printEvenArray(int[] arr){
+    public static int[] removeEven(int[] arr){
         int n = arr.length;
-        System.out.println("Even array elements: ");
+        int oddCount=0;
+
         for(int i=0; i<n;i++){
-            if(arr[i]%2!=0)
-            System.out.print(arr[i] + " ");
+            if(arr[i]%2!=0) {
+                oddCount++;
+            }
         }
-        System.out.println();
+        int[] result = new int[oddCount];
+        int index = 0;
+        for(int i=0;i<n;i++){
+            if(arr[i]%2!=0){
+                result[index]=arr[i];
+                index++;
+            }
+        }
+        return result;
 
     }
     public void arrayDemo(){
@@ -26,9 +36,14 @@ public class ArrayUtil {
     public static void main(String[] args){
 
         ArrayUtil arrUtil = new ArrayUtil();
-        arrUtil.printArray(new int[] {3,4,5,6,4});
-        arrUtil.printEvenArray(new int[] {3,4,5,6,4});
-        arrUtil.arrayDemo();
+        int[] array1 = {3,4,5,6,4};
+        printArray(array1);
+
+        int[] result = removeEven(array1);
+        printArray(result);
+//        arrUtil.printArray();
+//        arrUtil.printOddArray(new int[] {3,4,5,6,4});
+//        arrUtil.arrayDemo();
     }
 
 }
