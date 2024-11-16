@@ -24,13 +24,40 @@ public class ArrayUtil {
         }
         return result;
     }
+    public static int[] removeEvenElements(int[] arr){
+      int n=arr.length;
+      int count = 0;
+      for(int i=0;i<n;i++){
+          if(arr[i]%2!=0){
+              count++;
+          }
+      }
+      int[] result = new int[count];
+      int idx = 0;
+      for(int i=0;i<n;i++){
+          if(arr[i]%2!=0){
+              result[idx]=arr[i];
+              idx++;
+          }
+
+      }
+      return result;
+
+
+    }
   public static void main(String[] args){
       int[] array = new int[] {4,6,1,9,3,2,4,3,5,7};
       System.out.println("Print array elements");
       printArray(array);
       System.out.println("Reverse array elements");
-      int[] result = reverseArray(array);
-      printArray(result);
+      int[] reversedArray = reverseArray(array);
+      printArray(reversedArray);
+      System.out.println("Remove even array elements");
+      int[] oddElements = removeEvenElements(array);
+      printArray(oddElements);
+      int[] oddElementsReversed = reverseArray(oddElements);
+      System.out.println("Odd elements array reversed");
+      printArray(oddElementsReversed);
   }
 
 }
