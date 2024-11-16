@@ -12,16 +12,20 @@ public class ArrayUtil {
         int n = arr.length-1;
         int count=0;
 
-
         for(int i=n;i>=0;i--){
-            int[] arra =arr[i];
-            System.out.print(arr[i] + " ");
+
+            count++;
         }
         int[] result = new int[count];
+        int idx = 0;
+        for(int i=n; i>=0;i--){
+            result[idx] = arr[i];
+            idx++;
+        }
         return result;
     }
   public static void main(String[] args){
-      int[] array = new int[] {2,4,3,5,7};
+      int[] array = new int[] {4,6,1,9,3,2,4,3,5,7};
       System.out.println("Print array elements");
       printArray(array);
       System.out.println("Reverse array elements");
