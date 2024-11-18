@@ -8,7 +8,7 @@ public class ArrayUtil {
       }
       System.out.println();
   }
-    public static int[] reverseArray(int[] arr){
+  public static int[] reverseArray(int[] arr){
         int n = arr.length-1;
         int count=0;
 
@@ -23,6 +23,17 @@ public class ArrayUtil {
             idx++;
         }
         return result;
+    }
+    public static void reverseArray(int[] arr,int start, int end){
+
+      while(start<end){
+          int temp = arr[start];
+          arr[start]=arr[end];
+          arr[end]=temp;
+          start++;
+          end--;
+      }
+
     }
     public static int[] removeEvenElements(int[] arr){
       int n=arr.length;
@@ -90,6 +101,11 @@ public class ArrayUtil {
       System.out.println("Reversed even array elements");
       int[] reversedEvenElements = reverseArray(evenElements);
       printArray(reversedEvenElements);
+
+      System.out.println("Reverse array elements");
+      printArray(array);
+      reverseArray(array,0,array.length-1);
+      printArray(array);
 
   }
 
