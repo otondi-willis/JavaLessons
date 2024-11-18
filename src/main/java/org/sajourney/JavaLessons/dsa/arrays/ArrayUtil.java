@@ -87,6 +87,10 @@ public class ArrayUtil {
       return min;
     }
     public static int findMax(int[] arr){
+      //edge
+        if(arr==null || arr.length == 0 ){
+            throw new IllegalArgumentException("Invalid input");
+        }
         int max = arr[0];
         for(int i=1;i<arr.length;i++){
             if(arr[i]>max){
