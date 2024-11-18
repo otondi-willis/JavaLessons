@@ -8,7 +8,7 @@ public class ArrayUtil {
       }
       System.out.println();
   }
-  public static int[] reverseArray(int[] arr){
+    public static int[] reverseArray(int[] arr){
         int n = arr.length-1;
         int count=0;
 
@@ -77,8 +77,17 @@ public class ArrayUtil {
 
 
     }
+    public static int findMin(int[] arr){
+      int min = arr[0];
+      for(int i=1;i<arr.length;i++){
+          if(arr[i]<min){
+              min=arr[i];
+          }
+      }
+      return min;
+    }
   public static void main(String[] args){
-      int[] array = new int[] {4,6,1,9,3,2,4,3,5,7};
+      int[] array = new int[] {4,6,1,9,3,2,4,3,5,7,0};
       System.out.println("Print array elements");
       printArray(array);
 
@@ -106,6 +115,11 @@ public class ArrayUtil {
       printArray(array);
       reverseArray(array,0,array.length-1);
       printArray(array);
+
+      int min = findMin(array);
+      System.out.println("Minimum value in the array: " + min);
+
+
 
   }
 
