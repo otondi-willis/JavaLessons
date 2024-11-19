@@ -1,5 +1,7 @@
 package org.sajourney.JavaLessons.dsa.arrays;
 
+import static org.sajourney.JavaLessons.dsa.arrays.ArrayFunctions.findSecondMin;
+
 public class ArrayUtil {
   public static void printArray(int[] arr){
       int n = arr.length;
@@ -104,6 +106,9 @@ public class ArrayUtil {
         return max;
     }
     public static int findSecondMax(int[] arr){
+      if(arr==null || arr.length==0){
+          throw new IllegalArgumentException("Invalid Input");
+      }
       int max = Integer.MIN_VALUE;
       int secondMax = Integer.MIN_VALUE;
 
@@ -118,7 +123,7 @@ public class ArrayUtil {
       return secondMax;
     }
   public static void main(String[] args){
-      int[] array = new int[] {4,6,1,9,3,8,2,4,3,5,7,0};
+      int[] array = new int[] {4,6,1,9,3,8,2,4,3,5,7};
       System.out.println("Print array elements");
       printArray(array);
 
@@ -152,8 +157,11 @@ public class ArrayUtil {
       int max = findMax(array);
       System.out.println("Maximum value in the array: " + max);
 
-      int max1 = findSecondMax(array);
-      System.out.println("Maximum value in the array: " + max1);
+      int secondMax = findSecondMax(array);
+      System.out.println("Maximum value in the array: " + secondMax);
+
+      int secondMin = findSecondMin(array);
+      System.out.println("The second minimum value in the array: " + secondMin);
 
 
 
