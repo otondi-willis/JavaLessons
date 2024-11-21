@@ -123,7 +123,7 @@ public class ArrayUtil {
       return secondMax;
     }
   public static void main(String[] args){
-      int[] array = new int[] {4,6,1,9,3,8,2,4,3,5,7};
+      int[] array = new int[] {0,4,6,0,1,9,3,8,0,2,4,3,5,7};
       System.out.println("Print array elements");
       printArray(array);
 
@@ -162,6 +162,11 @@ public class ArrayUtil {
 
       int secondMin = findSecondMin(array);
       System.out.println("The second minimum value in the array: " + secondMin);
+
+      System.out.println("Array with zeros moved to the end:");
+      ArrayFunctions.moveArrayZeros(array,array.length);
+      printArray(array);
+
 
 
 
