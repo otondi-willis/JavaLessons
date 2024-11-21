@@ -19,19 +19,30 @@ And if one green bottle should accidentally fall,
 There'll be eight green bottles sitting on the wall.*/
 
 public class BottleSong {
-    public void chorus(){
-        System.out.println("Ten green bottles sitting on the wall,\n Ten green bottles sitting on the wall, \n And if one green bottle should accidentally fall,\n There'll be nine green bottles sitting on the wall. ");
+    public static void chorus(int n){
+
+        System.out.println( n + " green bottles sitting on the wall,\n " +
+                n + " green bottles sitting on the wall, \n " +
+                "And if one green bottle should accidentally fall,\n " +
+                "There'll be " + (n-1) + " green bottles sitting on the wall. ");
+        System.out.println();
 
 
 
     }
     public static void main(String[] args){
         int bottles = 10;
-        BottleSong chorus = new BottleSong();
+        int count = 10;
+
         System.out.println("Ten Green Bottles Song Lyrics");
-        for(int i=0;i<bottles ; i++){
-            chorus.chorus();
+        while(bottles > 0 && bottles <=10){
+            for(int i=0;i<count ; i++){
+
+               chorus(bottles);
+               bottles--;
+            }
         }
+
 
 
 
