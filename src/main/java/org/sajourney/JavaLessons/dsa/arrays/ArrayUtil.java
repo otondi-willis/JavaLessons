@@ -167,6 +167,13 @@ public class ArrayUtil {
       ArrayFunctions.moveArrayZeros(array,array.length);
       printArray(array);
 
+      System.out.println("Resized array:");
+      int[] resized = ArrayFunctions.resizeArray(array,array.length*2);
+
+      printArray(resized);
+      System.out.println(array.length);
+      System.out.println(resized.length);
+
 
 
 
